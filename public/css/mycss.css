@@ -1,0 +1,31 @@
+.sagni {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 800px;
+    height: 60vh;
+    background-color: #222;
+    z-index: 10;
+}
+
+body {
+    /* display: none !important; */
+    backdrop-filter: blur("100px");
+}
+
+.main {
+    display: none;
+}
+
+.hidden-class {}
+
+.blurClass {
+    backdrop-filter: blur(10px);
+}
+
+.defualt-container {
+display: none;
+}
+ .active-container {
+     display: block;
+ }

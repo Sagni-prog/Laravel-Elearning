@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Admin Dashboard</title>
+    <link rel="stylesheet" href="teacherStyle.css">
+    <link rel="stylesheet" href="coursestyle.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link type="text/css" href="css/perfect-scrollbar.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="full-screen-preview-r">
+    <div class="preview__header-r" data-view="ctaHeader">
+
+        <a class="header-Debo-Tutor" href="#">Debo SkillShare</a>
+
+    </div>
+
+    <div class="container-r">
+
+        <!-- Aside Class -->
+        <aside class="debo-aside">
+            <!-- <div class="overview-r">
+                <span class="icons-r">Icons</span>
+                <h3>Overview</h3>
+            </div> -->
+            <div class="student-dashboard-r">
+                <h4 class="admin-class-r">Admin</h4>
+
+                <div class="overview-r">
+                    <a href="index.html" class="aside-child-r">
+                        <i class="fa-solid fa-gauge icons-r"></i>
+                        <h3>Dashboard</h3>
+                    </a>
+                </div>
+
+                <div class="overview-r">
+                    <a href="index.html" class="aside-child-r">
+                        <i class='fas fa-user-edit fa-lg'></i>
+
+                        <h3>Edit Account</h3>
+                    </a>
+                </div>
+
+                <div class="overview-r">
+                    <a href="uploadsteacher.html" class="aside-child-r">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                        <h3>Upload Teacher</h3>
+                    </a>
+                </div>
+
+
+                <div class="overview-r">
+                    <a href="uploadingVideo.html" class="aside-child-r">
+                        <i class="fas fa-video"></i>
+                        <h3>Upload Videos</h3>
+                    </a>
+                </div>
+
+                <div class="overview-r">
+                    <a href="course.html" class="aside-child-r">
+                        <i class="fas fa-file"></i>
+                        <h3>Courses</h3>
+                    </a>
+                </div>
+                <div class="overview-r">
+                    <a href="studentList.html" class="aside-child-r">
+                        <i class="fa-solid fa-user-graduate"></i>
+                        <h3>Students</h3>
+                    </a>
+                </div>
+                <div class="overview-r">
+                    <a href="TeacherList.html" class="aside-child-r">
+                        <i class="fas fa-ad"></i>
+                        <h3>Teachers</h3>
+                    </a>
+                </div>
+
+
+
+                <ul>
+
+                </ul>
+            </div>
+        </aside>
+
+        <!-- Container body Class -->
+        <div class="container-fluid-r">
+
+            <!-- Navbar on Container -->
+
+            <div class="navbar-container-r">
+                <!-- <input type="search" class="search-r" name="search" id="" placeholder="Search"> -->
+
+                <form class="search-r">
+                    <input type="search" class="search-input-r" name="search" id="" placeholder="Search">
+                    <button type="submit" class="button-search"> <i
+                            class="fa-solid fa-magnifying-glass icons-r"></i></button>
+                </form>
+
+
+                <a href="approveTeacher.html">
+                    <i class="fa-regular fa-bell icons-r"></i>
+
+                </a>
+
+                <a href="feedback.html">
+                    <i class="fa-regular fa-message icons-r"></i>
+                </a>
+
+                <a href="Teacherprofile.html">
+                    <i class="fa-regular fa-user icons-r"></i>
+                </a>
+
+
+            </div>
+
+            <div class="mdk-drawer-layout js-mdk-drawer-layout" data-push data-responsive-width="992px" data-fullbleed>
+                <div class="mdk-drawer-layout__content">
+                    <div class="content-header-r">
+                        <h1>All Feedbacks</h1>
+                    </div>
+
+                    <div class="mdk-header-layout__content mdk-header-layout__content--fullbleed mdk-header-layout__content--scrollable page"
+                        style="padding-top: 6px; background-color: #f9f9f9;">
+
+                        <div class="container-fluid page__container" style="width: 100%; ">
+                            <form action="#" class="mb-3 border-bottom pb-3">
+                                <div class="d-flex"
+                                    style="display: flex; justify-content: space-between; margin-bottom: 2rem;">
+
+
+                                    <div class="form-inline ml-auto">
+
+                                        <div class="form-group mr-3 align-items-center" style="align-items: flex-end;">
+                                            <label for="published01" class="form-label mr-1">Status</label>
+                                            <select id="published01" class="form-control custom-select"
+                                                style="width: 200px;">
+                                                <option selected="">All</option>
+                                                <option value="1">New Releases</option>
+                                                <option value="3">Old one</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <hr>
+
+                            <div class="g" style="background-color: #742020;
+                            display: flex;
+                            flex-wrap: wrap;
+                            
+                            height: 55vh;
+                       row-gap: 2em;
+                 /* background-color: #fff; */
+                    color: #262626;
+                     background-color: #f9f9f9 !important;
+                   overflow-y: auto;
+                            
+                            
+                            
+                                ">
+
+                                <div class="col-md-3" style="width: 30%;">
+                                    <div class="card card__course" style="background-color: #f9f9f9 !important;; border: 1px solid #ccc;
+                                    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);">
+                                        <div
+                                            class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                            <div class="card-header__title  justify-content-spacebetween align-self-center d-flex"
+                                                href="#"
+                                                style="color: rgb(32, 31, 31); display: flex;   justify-content: space-between; padding: 10px 10px;">
+                                                <div style="display: flex;">
+                                                    <img src="/logos/team-4.jpg" width="50px" height="50px" alt="logos"
+                                                        style="border-radius: 50%;">
+                                                    <div style="padding: 3px 3px;">
+                                                        <strong>Natnael Getachew</strong><br />
+                                                        <small class="text-muted">@Nattygetcho</small>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-comment-dots"
+                                                        style="font-size: 30px; color:rgb(0, 162, 255);"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="mb-2">
+                                                <span class="mr-2">
+                                                    <p style="padding: 5px 5px;">I think I shoud subscribe to &copy Debo
+                                                        Tutor
+                                                        for learning. it is amazing. Super talented educator and quality
+                                                        content.
+
+                                                    </p>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <small class="text-muted">10:44pm Oct 11,2020</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="width: 30%;">
+                                    <div class="card card__course" style="background-color: #f9f9f9 !important;; border: 1px solid #ccc;
+                                    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);">
+                                        <div
+                                            class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                            <div class="card-header__title  justify-content-spacebetween align-self-center d-flex"
+                                                href="#"
+                                                style="color: rgb(32, 31, 31); display: flex;   justify-content: space-between; padding: 10px 10px;">
+                                                <div style="display: flex;">
+                                                    <img src="/logos/team-4.jpg" width="50px" height="50px" alt="logos"
+                                                        style="border-radius: 50%;">
+                                                    <div style="padding: 3px 3px;">
+                                                        <strong>Natnael Getachew</strong><br />
+                                                        <small class="text-muted">@Nattygetcho</small>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-comment-dots"
+                                                        style="font-size: 30px; color:rgb(0, 162, 255);"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="mb-2">
+                                                <span class="mr-2">
+                                                    <p style="padding: 5px 5px;">I think I shoud subscribe to &copy Debo
+                                                        Tutor
+                                                        for learning. it is amazing. Super talented educator and quality
+                                                        content.
+
+                                                    </p>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <small class="text-muted">10:44pm Oct 11,2020</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="width: 30%;">
+                                    <div class="card card__course" style="background-color: #f9f9f9 !important;; border: 1px solid #ccc;
+                                    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);">
+                                        <div
+                                            class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                            <div class="card-header__title  justify-content-spacebetween align-self-center d-flex"
+                                                href="#"
+                                                style="color: rgb(32, 31, 31); display: flex;   justify-content: space-between; padding: 10px 10px;">
+                                                <div style="display: flex;">
+                                                    <img src="/logos/team-4.jpg" width="50px" height="50px" alt="logos"
+                                                        style="border-radius: 50%;">
+                                                    <div style="padding: 3px 3px;">
+                                                        <strong>Natnael Getachew</strong><br />
+                                                        <small class="text-muted">@Nattygetcho</small>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-comment-dots"
+                                                        style="font-size: 30px; color:rgb(0, 162, 255);"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="mb-2">
+                                                <span class="mr-2">
+                                                    <p style="padding: 5px 5px;">I think I shoud subscribe to &copy Debo
+                                                        Tutor
+                                                        for learning. it is amazing. Super talented educator and quality
+                                                        content.
+
+                                                    </p>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <small class="text-muted">10:44pm Oct 11,2020</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="width: 30%;">
+                                    <div class="card card__course" style="background-color: #f9f9f9 !important;; border: 1px solid #ccc;
+                                    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);">
+                                        <div
+                                            class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                            <div class="card-header__title  justify-content-spacebetween align-self-center d-flex"
+                                                href="#"
+                                                style="color: rgb(32, 31, 31); display: flex;   justify-content: space-between; padding: 10px 10px;">
+                                                <div style="display: flex;">
+                                                    <img src="/logos/team-4.jpg" width="50px" height="50px" alt="logos"
+                                                        style="border-radius: 50%;">
+                                                    <div style="padding: 3px 3px;">
+                                                        <strong>Natnael Getachew</strong><br />
+                                                        <small class="text-muted">@Nattygetcho</small>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-comment-dots"
+                                                        style="font-size: 30px; color:rgb(0, 162, 255);"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="mb-2">
+                                                <span class="mr-2">
+                                                    <p style="padding: 5px 5px;">I think I shoud subscribe to &copy Debo
+                                                        Tutor
+                                                        for learning. it is amazing. Super talented educator and quality
+                                                        content.
+
+                                                    </p>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <small class="text-muted">10:44pm Oct 11,2020</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3" style="width: 30%;">
+                                    <div class="card card__course" style="background-color: #f9f9f9 !important;; border: 1px solid #ccc;
+                                    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);">
+                                        <div
+                                            class="card-header card-header-large card-header-dark bg-dark d-flex justify-content-center">
+                                            <div class="card-header__title  justify-content-spacebetween align-self-center d-flex"
+                                                href="#"
+                                                style="color: rgb(32, 31, 31); display: flex;   justify-content: space-between; padding: 10px 10px;">
+                                                <div style="display: flex;">
+                                                    <img src="/logos/team-4.jpg" width="50px" height="50px" alt="logos"
+                                                        style="border-radius: 50%;">
+                                                    <div style="padding: 3px 3px;">
+                                                        <strong>Natnael Getachew</strong><br />
+                                                        <small class="text-muted">@Nattygetcho</small>
+                                                    </div>
+                                                </div>
+
+                                                <div>
+                                                    <i class="fa-solid fa-comment-dots"
+                                                        style="font-size: 30px; color:rgb(0, 162, 255);"></i>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="p-3">
+                                            <div class="mb-2">
+                                                <span class="mr-2">
+                                                    <p style="padding: 5px 5px;">I think I shoud subscribe to &copy Debo
+                                                        Tutor
+                                                        for learning. it is amazing. Super talented educator and quality
+                                                        content.
+
+                                                    </p>
+                                                </span>
+
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <small class="text-muted">10:44pm Oct 11,2020</small>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End of container Class -->
+                <script src="script.js"></script>
+</body>
+
+</html>
